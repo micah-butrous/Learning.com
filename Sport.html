@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sport.com</title>
+</head>
+<body>
+	<button type="button"
+	onclick="document.getElementById('demo4').innerHTML = Date()">Click me to display Date and Time.</button>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<script type="text/javascript">
+		const car = {height:"20 M", color:"white", model:"fifth"};
+		document.getElementById("demo1").innerHTML="the color of the car is " + car.color;
+		
+		const human ={character:"kind", shape:"fat", height:"2M", color:"darkskin", generation:"21 century", age:"25"};
+		document.getElementById("demo2").innerHTML="The color of human is " + human.shape;
+
+		// Create an empty Object
+const person = {};
+
+// Add Properties/attributes
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue"; 
+
+// Display Data from Object
+document.getElementById("demo3").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+
+const myObj={
+	name: "Micah",
+	age: "27",
+	myCars: {
+		car1:"Ford",
+		car2: "lorry",
+		car3: "bus"
+	}
+}
+document.getElementById("demo5").innerHTML= myObj.myCars.car3;
+	</script>
+
+
+</body>
+</html>
